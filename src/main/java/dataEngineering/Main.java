@@ -16,33 +16,9 @@ public class Main {
   public static void main(String[] args) throws IOException, CsvValidationException {
     CsvParser csvP = new CsvParser("src/Data/bookstore_report2.csv");
     csvP.printCsv();
+    
 
-
-
-
-//    Path BSreport = Paths.get("bookstore_report2.csv");
-//    if (!Files.exists(BSreport)) {
-//      System.out.println("File does not exist");
-//      System.exit(1);
-//    }
-//
-//    // Quick Stream to read all the lines for printing
-//    // Including try/catch for IOException
-//    try {
-//      List<String> allLines = Files.lines(BSreport)
-//          .filter(line -> !line.isEmpty())
-//          .collect(Collectors.toList());
-//
-//      allLines.forEach(System.out::println);
-//    } catch (IOException ie) {
-//      throw new RuntimeException(ie);
-//    }
-//    for (var element : BSreport) {
-//      System.out.println(element.getName());
-//    }
-
-
-
+    // JSON for later use in our project
     /*load the JSON
     1. Create instance of GSON
     2. Create a JsonReader object using FileReader
