@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ac5ec89d-5781-42a8-aeef-ae65124766d6" name="Default Changelist" comment="" />
+    <list default="true" id="ac5ec89d-5781-42a8-aeef-ae65124766d6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataEngineering/CsvParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataEngineering/CsvParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataEngineering/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataEngineering/Main.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,10 +100,22 @@
       <option name="presentableId" value="Default" />
       <updated>1581041962935</updated>
       <workItem from="1581041966991" duration="3666000" />
+      <workItem from="1581046055536" duration="1081000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

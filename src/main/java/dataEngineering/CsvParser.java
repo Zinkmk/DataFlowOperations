@@ -14,32 +14,36 @@ import java.util.List;
 public class CsvParser {
 
   private List fileRows = new ArrayList();
-  /* List holds all the fields from the file because it's a CSV of strings, we can make it
-  a string but it's common to have to handle more than just strings so we either use
-  a Class or Blank Object type.
+  /*  we can make List a string but it's common to have to handle more
+  than just strings so we either use a Class or Blank Object type.
    */
 
+  /**
+   * CsvParser: reads csv files using @readCsv and OpenCSV
+   * @param infile the file to be opened
+   * @throws IOException
+   * @throws CsvValidationException
+   */
   public CsvParser(String infile) throws IOException, CsvValidationException {
-    /** CsvParser - Reads csv Files using OpenCSV
-     * On Load, check if file exists then Load it into fileRows
-     * @param infile the file to be opened with path info
-     */
     if (checkFile(infile)) {
-      readCsv(infile);
+      readCsv(infile); // next function
     }
   }
 
-  protected void readCsv(String csvinfile) throws IOException, CsvValidationException {
-    /** readCSV: Read CSV file and load our fileRows list
-     * @param csvinfile CSV file with path info for loading
-     */
 
-    //open a file & input stream for use with CSVReader (to creater a reader object
+  /**
+   * readCsv: read a file and load fileRows list
+   * @param csvinfile CSV file with the path for loading
+   * @throws IOException
+   * @throws CsvValidationException
+   */
+  protected void readCsv(String csvinfile) throws IOException, CsvValidationException {
+    //open a file & input stream for use with CSVReader (to create a reader object)
     FileInputStream csvStream = new FileInputStream(csvinfile);
     InputStreamReader inputStream = new InputStreamReader(csvStream, StandardCharsets.UTF_8);
     CSVReader reader = new CSVReader(inputStream);
 
-    // Object type, it will be too (not String[])
+    // Object type,
     // Making it a String[] will allow it to cast later
     //Read the file and load each line into our List
     String[] nextLine;
@@ -50,34 +54,13 @@ public class CsvParser {
     reader.close();
   }
 
-  // comparison comments for reading / writing a csv (this is from repl.it
-//    Path BSreport = Paths.get("bookstore_report2.csv");
-//    if (!Files.exists(BSreport)) {
-//      System.out.println("File does not exist");
-//      System.exit(1);
-//    }
-//
-//    // Quick Stream to read all the lines for printing
-//    // Including try/catch for IOException
-//    try {
-//      List<String> allLines = Files.lines(BSreport)
-//          .filter(line -> !line.isEmpty())
-//          .collect(Collectors.toList());
-//
-//      allLines.forEach(System.out::println);
-//    } catch (IOException ie) {
-//      throw new RuntimeException(ie);
-//    }
-//    for (var element : BSreport) {
-//      System.out.println(element.getName());
-//    }
-
-
+  /**
+   * prints the CSV
+   */
   protected void printCsv() {
-    /** printCsv - Printout the Csv */
     for (Object row : fileRows) {
       /*
-      So fileRows will be an object type
+      fileRows will be an object type
       after getting each row, we will need to "cast" row to be a string array (String[])
        */
       for (String fields : (String[]) row) {
@@ -87,14 +70,15 @@ public class CsvParser {
     }
   }
 
+  /**
+   * checkFile: checks to see if there's actually a file
+   * @param csvfile CSV file with the path for loading
+   * @return false - not found // true - found
+   */
   private boolean checkFile(String csvfile) {
-    /** checkFile - checks to ensure the file exists
-     * @return false on file not found true on found
-     */
     if (!Files.exists(Paths.get(csvfile))) {
       System.out.println("file doesn't exist");
       return false;
-      // may change this to throw an exception
     }
     return true;
   }
