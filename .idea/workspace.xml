@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ac5ec89d-5781-42a8-aeef-ae65124766d6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Remaster of CsvToDatabase-master.iml" beforeDir="false" afterPath="$PROJECT_DIR$/dataFlowOperations.iml" afterDir="false" />
-    </list>
+    <list default="true" id="ac5ec89d-5781-42a8-aeef-ae65124766d6" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +96,7 @@
       <option name="presentableId" value="Default" />
       <updated>1581041962935</updated>
       <workItem from="1581041966991" duration="3666000" />
-      <workItem from="1581046055536" duration="1485000" />
+      <workItem from="1581046055536" duration="1750000" />
     </task>
     <servers />
   </component>
