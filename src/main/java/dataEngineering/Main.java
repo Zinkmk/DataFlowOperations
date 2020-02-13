@@ -14,7 +14,7 @@ public class Main {
     // Literally just calls our parser right now (....and is called for tests)
     CsvParser csvP = new CsvParser("src/Main/Data/bookstore_report2.csv");
     csvP.printCsv();
-    System.out.println("\n"); //seperating groups of data
+    System.out.println("\n"); //separating groups of data
     // Load the json
         /*
         1. Create instance of GSON

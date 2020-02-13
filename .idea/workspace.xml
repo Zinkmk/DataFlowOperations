@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac5ec89d-5781-42a8-aeef-ae65124766d6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/Data/BookStore.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dataEngineering/DBManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataFlowOperations.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Data/SEOExample.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Data/authors.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Data/bookstore_report2.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dataEngineering/AuthorParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataEngineering/AuthorParser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dataEngineering/CsvParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataEngineering/CsvParser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dataEngineering/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataEngineering/Main.java" afterDir="false" />
     </list>
@@ -167,7 +158,7 @@
       <workItem from="1581046055536" duration="3045000" />
       <workItem from="1581562180894" duration="27000" />
       <workItem from="1581562314240" duration="361000" />
-      <workItem from="1581562854180" duration="1050000" />
+      <workItem from="1581562854180" duration="2160000" />
     </task>
     <servers />
   </component>

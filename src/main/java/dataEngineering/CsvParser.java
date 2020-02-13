@@ -29,16 +29,16 @@ public class CsvParser {
       readCsv(infile);
     }
   }
+
   protected void saveToDatabase() {
-    if(fileRows.size() == 0) { // no data loaded
-      System.out.println("No data found in CSV file.");
+    if (fileRows.size() == 0) { // Checking to see if we find data in the csv file
+      System.out.println("Nothing in CSV file.");
     } else {
-      int rowNumber = 1; // row being saved
-      for (Object row : fileRows.subList(1, fileRows.size() - 1)) {
-        if (!DBManager.saveCSV((String[]) row)) {
-          System.out.println( String.format("Error saving CSV file to database. (Row %d)", rowNumber));
+      for (Object line : fileRows.subList(1, fileRows.size() - 1)) {
+        if (!DBManager.saveCSV((String[]) line)) {
+          System.out
+              .println(String.format("Couldn't save CSV to database"));
         }
-        rowNumber++;
       }
 
     }
