@@ -68,13 +68,13 @@ public class DBManager {
       if ((connection = getConnection()) != null) {
         //save book details
         statement = connection.prepareStatement(
-            "INSERT OR IGNORE INTO book (isbn, publisher_name, author_name, book_title)"
+            "INSERT OR IGNORE INTO book (author_name, book_title, isbn, publisher_name)"
                 + "Values (?,?,?,?)");
         //rows are {isbn, title, author, publisher, store, location
-        statement.setString(1, line[0]); //ISBN
-        statement.setString(2, line[3]); //Author
-        statement.setString(3, line[2]); //Publisher
-        statement.setString(4, line[1]); //Title
+        statement.setString(1, line[2]); //Author
+        statement.setString(2, line[1]); //Book Title
+        statement.setString(3, line[0]); //ISBN
+        statement.setString(4, line[3]); //Publisher
         statement.executeUpdate();
         success = true;
       }
