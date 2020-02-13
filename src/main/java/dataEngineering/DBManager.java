@@ -11,6 +11,7 @@ public class DBManager {
 
   /**
    * Saves an author to the DB from AuthorParser
+   *
    * @param author, the object to be saved to the database
    * @return True if ir worked, false if not.
    */
@@ -57,6 +58,7 @@ public class DBManager {
 
   /**
    * Saves books from CSV lines
+   *
    * @param line, the line that the CSV details are read from.
    * @return same as before, T = success F = error
    */
@@ -97,6 +99,7 @@ public class DBManager {
 
   /**
    * Opens a connection to the database.
+   *
    * @return the connection
    */
   private static Connection getConnection() {
