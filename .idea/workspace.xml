@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ac5ec89d-5781-42a8-aeef-ae65124766d6" name="Default Changelist" comment="" />
+    <list default="true" id="ac5ec89d-5781-42a8-aeef-ae65124766d6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Data/BookStore.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dataEngineering/DBManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataFlowOperations.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Data/SEOExample.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Data/authors.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Data/bookstore_report2.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataEngineering/AuthorParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataEngineering/AuthorParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataEngineering/CsvParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataEngineering/CsvParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dataEngineering/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dataEngineering/Main.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,7 +32,23 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="BookStore" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="BookStore" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="BookStore" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -32,6 +61,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Users\kevin\OneDrive - Florida Gulf Coast University\Spring 2020\Code\dataEngineering\DataFlowOperations\.idea" />
+      </set>
+    </option>
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -41,15 +77,17 @@
   </component>
   <component name="ProjectId" id="1XSaUCtRtYdqO5Wvjl8Y68FGIO6" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/Data" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\kevin\Desktop\School work\Spring 2020 code\Code\dataEngineering\DataFlowOperations\src\main\Data" />
       <recent name="C:\Users\kevin\OneDrive - Florida Gulf Coast University\Spring 2020\Code\dataEngineering\Remaster of CsvToDatabase-master\src\Data" />
     </key>
   </component>
@@ -68,7 +106,7 @@
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="dataEngineering.Main" />
-      <module name="Remaster of CsvToDatabase-master" />
+      <module name="dataFlowOperations" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="dataEngineering.*" />
@@ -85,6 +123,36 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@aa5c280c" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@aa5c280c" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@66478c24" type="9fbbdea:ServiceModel$ServiceNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@aa5c280c" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@53dc106" type="9fbbdea:ServiceModel$ServiceNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@aa5c280c" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@56d86305" type="9fbbdea:ServiceModel$ServiceNode" />
+            </path>
+          </expand>
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -96,7 +164,10 @@
       <option name="presentableId" value="Default" />
       <updated>1581041962935</updated>
       <workItem from="1581041966991" duration="3666000" />
-      <workItem from="1581046055536" duration="1750000" />
+      <workItem from="1581046055536" duration="3045000" />
+      <workItem from="1581562180894" duration="27000" />
+      <workItem from="1581562314240" duration="361000" />
+      <workItem from="1581562854180" duration="1050000" />
     </task>
     <servers />
   </component>
@@ -108,7 +179,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

@@ -2,35 +2,36 @@ package dataEngineering;
 
 import com.google.gson.Gson;
 import com.google.gson.stream.JsonReader;
+import com.opencsv.ICSVParser;
 import com.opencsv.exceptions.CsvValidationException;
+import dataEngineering.AuthorParser;
 import java.io.FileReader;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.util.List;
-import java.util.stream.Collectors;
 
 public class Main {
 
   public static void main(String[] args) throws IOException, CsvValidationException {
-    CsvParser csvP = new CsvParser("src/Data/bookstore_report2.csv");
+    // Literally just calls our parser right now (....and is called for tests)
+    CsvParser csvP = new CsvParser("src/Main/Data/bookstore_report2.csv");
     csvP.printCsv();
-
-
-    // JSON for later use in our project
-    /*load the JSON
-    1. Create instance of GSON
-    2. Create a JsonReader object using FileReader
-    3. Array of class instances of AuthorParser, assign data from our JsonReader
-    4. foreach loop to check data
-     */
+    System.out.println("\n"); //seperating groups of data
+    // Load the json
+        /*
+        1. Create instance of GSON
+        2. Create a JsonReader object using FileReader
+        3. Array of class instances of AuthorParser, assign data from our JsonReader
+        4. foreach loop to check data
+         */
     Gson gson = new Gson();
-    JsonReader jsread = new JsonReader(new FileReader("src/Data/authors.json"));
-        AuthorParser[] authors = gson.fromJson(jsread, AuthorParser[].class);
-
+    JsonReader jread = new JsonReader(new FileReader("src/Main/Data/authors.json"));
+    AuthorParser[] authors = gson.fromJson(jread, AuthorParser[].class);
     for (var element : authors) {
       System.out.println(element.getName());
+    }
+
+    csvP.saveToDatabase();
+    for (AuthorParser author : authors) {
+      DBManager.saveAuthor(author);
     }
   }
 }
