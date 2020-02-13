@@ -9,6 +9,11 @@ import java.sql.SQLException;
 
 public class DBManager {
 
+  /**
+   * Saves an author to the DB from AuthorParser
+   * @param author, the object to be saved to the database
+   * @return True if ir worked, false if not.
+   */
   public static boolean saveAuthor(AuthorParser author) {
     Connection connection = null;
     PreparedStatement statement = null;
@@ -44,13 +49,18 @@ public class DBManager {
           connection.close();
         }
       } catch (SQLException e) {
-        System.out.println("Databose did not close correctly because: " + e.getMessage());
+        System.out.println("Database did not close correctly");
       }
     }
     return success;
   }
 
-  public static boolean saveCSV(String[] row) {
+  /**
+   * Saves books from CSV lines
+   * @param line, the line that the CSV details are read from.
+   * @return same as before, T = success F = error
+   */
+  public static boolean saveCSV(String[] line) {
     Connection connection = null;
     PreparedStatement statement = null;
     boolean success = false;
@@ -61,10 +71,10 @@ public class DBManager {
             "INSERT OR IGNORE INTO book (isbn, publisher_name, author_name, book_title)"
                 + "Values (?,?,?,?)");
         //rows are {isbn, title, author, publisher, store, location
-        statement.setString(1, row[0]); //ISBN
-        statement.setString(2, row[2]); //Author
-        statement.setString(3, row[3]); //Publisher
-        statement.setString(4, row[1]); //Title
+        statement.setString(1, line[0]); //ISBN
+        statement.setString(2, line[3]); //Author
+        statement.setString(3, line[2]); //Publisher
+        statement.setString(4, line[1]); //Title
         statement.executeUpdate();
         success = true;
       }
@@ -79,12 +89,16 @@ public class DBManager {
           connection.close();
         }
       } catch (SQLException e) {
-        System.out.println("error closing database connections because: " + e.getMessage());
+        System.out.println("error closing database connections");
       }
     }
     return success;
   }
 
+  /**
+   * Opens a connection to the database.
+   * @return the connection
+   */
   private static Connection getConnection() {
     Connection connection = null;
     if (Files.exists(Paths.get("src/main/Data/bookstore.db"))) { //verifying database
